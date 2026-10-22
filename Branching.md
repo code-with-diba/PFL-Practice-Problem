@@ -98,22 +98,23 @@ int main() {
 }
 ```
 
-## 7. Vowel or consonant
+### 7. Uppercase or lowercase
 
 ```c
 #include <stdio.h>
 int main() {
     char ch;
     scanf("%c", &ch);
-    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || 
-        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
-        printf("Vowel\n");
+    if (ch >= 'A' && ch <= 'Z')
+        printf("Uppercase\n");
+    else if (ch >= 'a' && ch <= 'z')
+        printf("Lowercase\n");
     else
-        printf("Consonant\n");
+        printf("Not an alphabet\n");
     return 0;
 }
 ```
-
+    
 ## 8. Alphabet, digit, or special character
 
 ```c
