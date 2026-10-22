@@ -1,19 +1,22 @@
-## 1. Maximum between three numbers
+### 1. Write a C program to check whether a number is even or odd.
 
 ```c
 #include <stdio.h>
+
 int main() {
-    int a, b, c;
-    scanf("%d %d %d", &a, &b, &c);
-    if (a >= b && a >= c)
-        printf("Maximum = %d\n", a);
-    else if (b >= a && b >= c)
-        printf("Maximum = %d\n", b);
-    else
-        printf("Maximum = %d\n", c);
+    int num;
+
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    if (num % 2 == 0) {
+        printf("%d is Even.\n", num);
+    } else {
+        printf("%d is Odd.\n", num);
+    }
+
     return 0;
 }
-```
 
 ## 2. Negative, positive, or zero
 
