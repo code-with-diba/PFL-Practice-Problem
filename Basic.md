@@ -1,7 +1,5 @@
 ### 1. Sum of two numbers
 
-
-
 ```c
 #include <stdio.h>
 
