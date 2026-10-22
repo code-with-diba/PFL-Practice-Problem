@@ -175,7 +175,7 @@ int main() {
 }
 ```
 
-### 3. Square root of a number
+### 13. Square root of a number
 
 ```c
 #include <stdio.h>
