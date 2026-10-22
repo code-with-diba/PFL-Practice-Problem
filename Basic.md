@@ -9,6 +9,7 @@ int main() {
     printf("Sum = %.2lf\n", a + b);
     return 0;
 }
+```
 
 ### 2. Two numbers, all arithmetic operations
 
