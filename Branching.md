@@ -191,7 +191,57 @@ int main() {
 }
 ```
 
-## 13. Grade from marks (if-else)
+### 12. Write a C program to check whether the triangle is equilateral, isosceles, or scalene.
+
+```c
+#include <stdio.h>
+
+int main() {
+    float a, b, c;
+    scanf("%f %f %f", &a, &b, &c);
+
+    if (a + b > c && a + c > b && b + c > a) {
+        if (a == b && b == c) {
+            printf("The triangle is an Equilateral triangle.\n");
+        } else if (a == b || a == c || b == c) {
+            printf("The triangle is an Isosceles triangle.\n");
+        } else {
+            printf("The triangle is a Scalene triangle.\n");
+        }
+    } else {
+        printf("The triangle is not valid.\n");
+    }
+}
+```
+
+### 12. Write a C program to check whether the triangle is equilateral, isosceles, or scalene.
+
+```c
+#include <stdio.h>
+
+int main() {
+    float a, b, c;
+
+    printf("Enter three sides of the triangle: ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    if (a + b > c && a + c > b && b + c > a) {
+        if (a == b && b == c) {
+            printf("The triangle is an Equilateral triangle.\n");
+        } else if (a == b || a == c || b == c) {
+            printf("The triangle is an Isosceles triangle.\n");
+        } else {
+            printf("The triangle is a Scalene triangle.\n");
+        }
+    } else {
+        printf("The triangle is not valid.\n");
+    }
+
+    return 0;
+}
+```
+
+## 14. Grade from marks 
 
 ```c
 #include <stdio.h>
@@ -214,7 +264,7 @@ int main() {
 }
 ```
 
-## 14. Percentage and grade from three subjects
+## 15. Percentage and grade from three subjects
 
 ```c
 #include <stdio.h>
@@ -235,6 +285,25 @@ int main() {
         printf("Grade E\n");
     else
         printf("Grade F\n");
+    return 0;
+}
+```
+
+## 16. Count total number of notes in a given amount
+
+```c
+#include <stdio.h>
+int main() {
+    int amount;
+    scanf("%d", &amount);
+    int notes[] = {500, 100, 50, 20, 10, 5, 2, 1};
+    int n = 8;
+    for (int i = 0; i < n; i++) {
+        int count = amount / notes[i];
+        amount = amount % notes[i];
+        if (count > 0)
+            printf("Notes of %d = %d\n", notes[i], count);
+    }
     return 0;
 }
 ```
