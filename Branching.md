@@ -1,4 +1,4 @@
-### 1. Write a C program to check whether a number is even or odd.
+### 1. Even or odd.
 
 ```c
 #include <stdio.h>
@@ -17,6 +17,7 @@ int main() {
 
     return 0;
 }
+```
 
 ## 2. Negative, positive, or zero
 
