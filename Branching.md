@@ -135,24 +135,30 @@ int main() {
 }
 ```
 
-## 9. Uppercase or lowercase
+### 9. Write a C program to input any alphabet and check whether it is a vowel or a consonant. (nested if-else)
 
 ```c
 #include <stdio.h>
+
 int main() {
     char ch;
+
+    printf("Enter any alphabet: ");
     scanf("%c", &ch);
-    if (ch >= 'A' && ch <= 'Z')
-        printf("Uppercase\n");
-    else if (ch >= 'a' && ch <= 'z')
-        printf("Lowercase\n");
-    else
-        printf("Not an alphabet\n");
-    return 0;
+
+    if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')) {
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+            ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+            printf("%c is a Vowel.\n", ch);
+        } else {
+            printf("%c is a Consonant.\n", ch);
+        }
+    } else {
+        printf("%c is not an alphabet.\n", ch);
+    }
 }
 ```
-
-## 10. Week number to weekday name
+### 10. Week number to weekday name
 
 ```c
 #include <stdio.h>
