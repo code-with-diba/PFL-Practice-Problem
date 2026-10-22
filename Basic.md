@@ -1,6 +1,6 @@
 ### 1. Sum of two numbers
 
-**C Code Solution:**
+
 
 ```c
 #include <stdio.h>
