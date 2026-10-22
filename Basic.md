@@ -175,21 +175,7 @@ int main() {
 }
 ```
 
-### 13. Square root of a number
-
-```c
-#include <stdio.h>
-#include <math.h>
-
-int main() {
-    double n;
-    scanf("%lf", &n);
-    printf("Square root = %.4lf\n", sqrt(n));
-    return 0;
-}
-```
-
-### 13. Square root of a number
+### 3. Square root of a number
 
 ```c
 #include <stdio.h>
