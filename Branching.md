@@ -51,17 +51,19 @@ int main() {
 }
 ```
 
-## 4. Even or odd
+### 4. Maximum between three numbers
 
 ```c
 #include <stdio.h>
 int main() {
-    int n;
-    scanf("%d", &n);
-    if (n % 2 == 0)
-        printf("Even\n");
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
+    if (a >= b && a >= c)
+        printf("Maximum = %d\n", a);
+    else if (b >= a && b >= c)
+        printf("Maximum = %d\n", b);
     else
-        printf("Odd\n");
+        printf("Maximum = %d\n", c);
     return 0;
 }
 ```
