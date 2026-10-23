@@ -1,6 +1,6 @@
 ### 1. Pascal's triangle
 
-```c
+```
 Input -- Enter the number of rows
 Output --
     1
@@ -8,7 +8,7 @@ Output --
   1 2 1
  1 3 3 1
 1 4 6 4 1
-```
+
 ```c
 #include <stdio.h>
 int main() {
