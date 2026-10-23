@@ -1,6 +1,6 @@
 ### 1. Pascal's triangle
 
-Input -- Enter the number of rows
+```Input -- Enter the number of rows
 Output --
     1
    1 1
