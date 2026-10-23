@@ -33,7 +33,7 @@ int main() {
 ```
 
 ### 2. Pyramid Pattern
-
+```c
 Input - Enter n: 5
 Output --
     *
@@ -41,7 +41,7 @@ Output --
   * * *
  * * * *
 * * * * *
-
+```
 ```c
 #include <stdio.h>
 
@@ -68,14 +68,14 @@ int main(){
 ```
 
 ### 3. Inverted Pyramid
-
+```c
 Enter n: 5
 * * * * *
  * * * *
   * * *
    * *
     *
-
+```
 ```c
 #include <stdio.h>
 
@@ -124,14 +124,14 @@ int main() {
 ```
 
 ### Pattern number
-
+```c
 Input - Enter N = 5
 Output -
 1
 1 2
 1 2 3
 1 2 3 4
-
+```
 ```c
 #include <stdio.h>
 int main() {
@@ -149,14 +149,14 @@ int main() {
 ```
 
 ### Pattern A AB...
-
+```c
 Input - Enter N = 5
 Output -
 A
 AB
 ABC
 ABCD
-
+````
 ```c
 #include <stdio.h>
 int main() {
@@ -174,7 +174,7 @@ int main() {
 ```
 
 ### Pira
-
+```c
 Enter N = 5
     *
    * *
@@ -183,7 +183,7 @@ Enter N = 5
 * * * * *
  * * * *
   * * *
-
+```
 ```c
 #include <stdio.h>
 
@@ -206,7 +206,7 @@ int main() {
 ```
 
 ### Diamond Shape Pattern
-
+```c
 Enter N = 5
     *
    * *
@@ -217,7 +217,7 @@ Enter N = 5
   * * *
    * *
     *
-
+```
 ```c
 #include <stdio.h>
 
@@ -249,14 +249,14 @@ int main() {
 ```
 
 ### Holo Diamond
-
+```c
 Enter N = 5
 *
 **
 * *
 *  *
 *****
-
+```
 ```c
 #include <stdio.h>
 
