@@ -1,13 +1,14 @@
 ### 1. Pascal's triangle
 
-```Input -- Enter the number of rows
+```c
+Input -- Enter the number of rows
 Output --
     1
    1 1
   1 2 1
  1 3 3 1
 1 4 6 4 1
-
+```
 ```c
 #include <stdio.h>
 int main() {
