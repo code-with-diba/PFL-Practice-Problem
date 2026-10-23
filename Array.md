@@ -273,7 +273,7 @@ int main() {
 }
 ```
 
-###9. Write a C program to put even and odd elements in two separate arrays.
+### 9. Write a C program to put even and odd elements in two separate arrays.
 ```c
 #include<stdio.h>
 
