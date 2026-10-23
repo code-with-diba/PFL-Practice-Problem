@@ -1,7 +1,7 @@
 ### 1. Pascal's triangle
 
 ```
-Input -- Enter the number of rows
+Input -- n=5
 Output --
     1
    1 1
