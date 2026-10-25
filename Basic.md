@@ -109,9 +109,8 @@ int main()
 int main() {
     double cm;
     scanf("%lf", &cm);
-    printf("Meters = %.4lf\n", cm / 100.0);
-    printf("Kilometers = %.6lf\n", cm / 100000.0);
-    return 0;
+    printf("Meters = %.2lf\n", cm / 100);
+    printf("Kilometers = %.5lf\n", cm / 100000);
 }
 ```
 
