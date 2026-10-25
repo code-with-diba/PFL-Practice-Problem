@@ -82,7 +82,6 @@ int main() {
     double length, breadth;
     scanf("%lf %lf", &length, &breadth);
     printf("Area = %.2lf", length * breadth);
-
 }
 ```
 
