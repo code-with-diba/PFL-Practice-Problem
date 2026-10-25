@@ -8,7 +8,7 @@ int main() {
     scanf("%lf %lf", &a, &b);
     printf("Sum = %.2lf", a + b);
 }
-
+```
 
 ### 2. Two numbers, all arithmetic operations
 
