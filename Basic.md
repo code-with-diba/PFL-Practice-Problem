@@ -131,14 +131,15 @@ int main()
 ### 10. Fahrenheit to Celsius
 
 ```c
-#include <stdio.h>
-
-int main() {
-    double fahrenheit;
-    scanf("%lf", &fahrenheit);
-    printf("Celsius = %.2lf\n", (fahrenheit - 32) * 5 / 9);
-    return 0;
+#include<stdio.h>
+int main()
+{
+  double f,c;
+  scanf("%lf",&f);
+  c =(f-32)*5/9;
+  printf("Celsius = %.2lf",c);
 }
+
 ```
 
 ### 11. Days into years, weeks and days
