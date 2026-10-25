@@ -110,7 +110,7 @@ int main() {
     double cm;
     scanf("%lf", &cm);
     printf("Meters = %.2lf\n", cm / 100);
-    printf("Kilometers = %.5lf\n", cm / 100000);
+    printf("Kilometers = %.5lf", cm / 100000);
 }
 ```
 
