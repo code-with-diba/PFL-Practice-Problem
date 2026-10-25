@@ -207,8 +207,7 @@ int main() {
 int main() {
     double base, height;
     scanf("%lf %lf", &base, &height);
-    printf("Area = %.2lf\n", 0.5 * base * height);
-    return 0;
+    printf("Area = %.2lf", 0.5 * base * height);
 }
 ```
 
