@@ -145,7 +145,7 @@ int main()
 ### 11. Days into years, weeks and days
 
 ```c
-#include <stdio.h>
+include <stdio.h>
 
 int main() {
     int totalDays, years, weeks, days;
@@ -154,9 +154,9 @@ int main() {
     days = totalDays % 365;
     weeks = days / 7;
     days = days % 7;
-    printf("%d years, %d weeks, %d days\n", years, weeks, days);
-    return 0;
+    printf("%d years, %d weeks, %d days", years, weeks, days);
 }
+
 ```
 
 ### 12. Power of a number x^y
