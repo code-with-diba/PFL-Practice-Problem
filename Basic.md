@@ -88,17 +88,17 @@ int main() {
 ### 7. Diameter, circumference, area of a circle
 
 ```c
-#include <stdio.h>
-#define PI 3.14159265
-
-int main() {
-    double radius;
-    scanf("%lf", &radius);
-    printf("Diameter = %.2lf\n", 2 * radius);
-    printf("Circumference = %.2lf\n", 2 * PI * radius);
-    printf("Area = %.2lf\n", PI * radius * radius);
-    return 0;
+#include<stdio.h>
+int main()
+{
+    double r;
+    const double PI =3.1416;
+    scanf("%lf",&r);
+    printf("Diameter = %.2lf\n",2*r);
+    printf("Circumference = %.2lf\n",2*PI*r);
+    printf("Area = %.2lf\n",PI*r*r);
 }
+
 ```
 
 ### 8. Centimeters to meters and kilometers
