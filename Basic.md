@@ -220,8 +220,7 @@ int main() {
 int main() {
     double side;
     scanf("%lf", &side);
-    printf("Area = %.4lf\n", (sqrt(3) / 4) * side * side);
-    return 0;
+    printf("Area = %.2lf", (sqrt(3) / 4) * side * side);
 }
 ```
 
