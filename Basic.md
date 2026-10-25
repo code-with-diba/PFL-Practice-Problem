@@ -25,7 +25,6 @@ int main() {
         printf("Quotient = %.2lf\n", a / b);
     else
         printf("Division by zero error\n");
-    return 0;
 }
 ```
 
