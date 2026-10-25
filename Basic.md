@@ -62,14 +62,15 @@ int main() {
 ### 5. Perimeter of a rectangle
 
 ```c
-#include <stdio.h>
+include <stdio.h>
 
 int main() {
     double length, breadth;
     scanf("%lf %lf", &length, &breadth);
-    printf("Perimeter = %.2lf\n", 2 * (length + breadth));
-    return 0;
+    printf("Perimeter = %.2lf", 2 * (length + breadth));
+
 }
+
 ```
 
 ### 6. Area of a rectangle
