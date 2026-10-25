@@ -42,8 +42,7 @@ int main() {
     int year;
     scanf("%d", &year);
     int isLeap = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
-    printf("%s\n", isLeap ? "Leap year" : "Not leap year");
-    return 0;
+    printf("%s", isLeap ? "Leap year" : "Not leap year");
 }
 ```
 
