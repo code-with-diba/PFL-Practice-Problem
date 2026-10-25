@@ -54,7 +54,6 @@ int main() {
     char ch;
     scanf("%c", &ch);
     int isAlpha = ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'));
-    printf("%s\n", isAlpha ? "Alphabet" : "Not alphabet");
-    return 0;
+    printf("%s", isAlpha ? "Alphabet" : "Not alphabet");
 }
 ```
