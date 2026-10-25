@@ -181,9 +181,9 @@ int main() {
 int main() {
     double n;
     scanf("%lf", &n);
-    printf("Square root = %.4lf\n", sqrt(n));
-    return 0;
+    printf("Square root = %.2lf", sqrt(n));
 }
+
 ```
 
 ### 14. Third angle of a triangle
