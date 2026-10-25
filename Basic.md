@@ -6,10 +6,9 @@
 int main() {
     double a, b;
     scanf("%lf %lf", &a, &b);
-    printf("Sum = %.2lf\n", a + b);
-    return 0;
+    printf("Sum = %.2lf", a + b);
 }
-```
+
 
 ### 2. Two numbers, all arithmetic operations
 
