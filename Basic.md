@@ -195,8 +195,7 @@ int main() {
     double angle1, angle2, angle3;
     scanf("%lf %lf", &angle1, &angle2);
     angle3 = 180 - angle1 - angle2;
-    printf("Third angle = %.2lf\n", angle3);
-    return 0;
+    printf("Third angle = %.2lf", angle3);
 }
 ```
 
