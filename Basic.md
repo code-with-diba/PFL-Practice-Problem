@@ -117,14 +117,15 @@ int main() {
 ### 9. Celsius to Fahrenheit
 
 ```c
-#include <stdio.h>
-
-int main() {
-    double celsius;
-    scanf("%lf", &celsius);
-    printf("Fahrenheit = %.2lf\n", (celsius * 9 / 5) + 32);
-    return 0;
+#include<stdio.h>
+int main()
+{
+  double c,f;
+  scanf("%lf",&c);
+  f=(c*9/5)+32;
+  printf("Fahrenheit = %.2lf",f);
 }
+
 ```
 
 ### 10. Fahrenheit to Celsius
