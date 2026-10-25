@@ -168,8 +168,7 @@ int main() {
 int main() {
     double x, y;
     scanf("%lf %lf", &x, &y);
-    printf("Result = %.4lf\n", pow(x, y));
-    return 0;
+    printf("Result = %.2lf", pow(x, y));
 }
 ```
 
