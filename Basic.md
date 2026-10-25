@@ -92,7 +92,7 @@ int main() {
 int main()
 {
     double r;
-    const double PI =3.1416;
+    const double PI = 3.1416;
     scanf("%lf",&r);
     printf("Diameter = %.2lf\n",2*r);
     printf("Circumference = %.2lf\n",2*PI*r);
