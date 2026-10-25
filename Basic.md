@@ -241,7 +241,7 @@ int main() {
     percentage = (total / 500) * 100;
     printf("Total = %.2lf\n", total);
     printf("Average = %.2lf\n", average);
-    printf("Percentage = %.2lf%%\n", percentage);
-    return 0;
+    printf("Percentage = %.2lf", percentage);
 }
+
 ```
