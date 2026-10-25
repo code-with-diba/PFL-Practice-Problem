@@ -39,9 +39,9 @@ int main() {
     temp = a;
     a = b;
     b = temp;
-    printf("a = %d, b = %d\n", a, b);
-    return 0;
+    printf("a = %d, b = %d", a, b);
 }
+
 ```
 
 ### 4. Swap two variables without a temporary variable
