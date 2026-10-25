@@ -6,9 +6,9 @@ int main() {
     int a, b, max;
     scanf("%d %d", &a, &b);
     max = (a > b) ? a : b;
-    printf("Maximum = %d\n", max);
-    return 0;
+    printf("Maximum = %d", max);
 }
+
 ```
 
 ## 2. Maximum between three numbers using conditional operator
