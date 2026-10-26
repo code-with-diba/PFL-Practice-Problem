@@ -72,11 +72,7 @@ int main()
 
 ```
 
-### 3.Write a C program to take an input character variable and print one of the following 
-messages, (a) RED, if either r or R is assigned to the variable  
-(b) GREEN, if either g or G is assigned to the variable  
-(c) BLUE, if either b or B is assigned to the variable  
-(d) BLACK, if the variable is assigned any other character
+### 3.Write a C program to take an input character variable and print one of the following messages, (a) RED, if either r or R is assigned to the variable  (b) GREEN, if either g or G is assigned to the variable  (c) BLUE, if either b or B is assigned to the variable  (d) BLACK, if the variable is assigned any other character
 
 ```c
 #include <stdio.h>
