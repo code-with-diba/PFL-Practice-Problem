@@ -48,20 +48,28 @@ int main() {
 
 ```
 
-### 4. Maximum between three numbers
+### 4. Maximum between three numbers(Nested if-else)
 
 ```c
 #include <stdio.h>
 int main() {
     int a, b, c;
     scanf("%d %d %d", &a, &b, &c);
-    if (a >= b && a >= c)
-        printf("Maximum = %d", a);
-    else if (b >= a && b >= c)
-        printf("Maximum = %d", b);
-    else
-        printf("Maximum = %d", c);
+
+    if (a >= b) {
+        if (a >= c)
+            printf("Maximum = %d", a);
+         else
+            printf("Maximum = %d", c);
+    }
+    else {
+        if (b >= c)
+            printf("Maximum = %d", b);
+         else
+            printf("Maximum = %d", c);
+    }
 }
+
 ```
 
 ## 5. Leap year check
