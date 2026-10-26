@@ -237,19 +237,26 @@ int main() {
 
 ### 18. Check whether a number is prime
 ```c
-#include <stdio.h>
-int main() {
-    int n, isPrime = 1;
-    scanf("%d", &n);
-    if (n < 2)
-        isPrime = 0;
-    for (int i = 2; i * i <= n; ++i) {
-        if (n % i == 0)
-            isPrime = 0;
+#include<stdio.h>
+int main(){
+    int num,count=0,i;
+    printf("Enter any positive number : ");
+    scanf("%d",&num);
+
+    for(i=2; i<num; i++)
+    {
+        if(num%i==0)
+        {
+            count++;
+            break;
+        }
     }
-    printf("%s\n", isPrime ? "Prime" : "Not Prime");
-    return 0;
+     if(count==0)
+            printf("Prime number");
+        else
+            printf("Not prime number");
 }
+
 ```
 
 ### 19. Print Fibonacci series up to n terms
