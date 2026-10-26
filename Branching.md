@@ -284,21 +284,20 @@ Percentage < 40% : Grade F
 int main() {
     double physics, maths, chemistry;
     scanf("%lf %lf %lf", &physics, &maths, &chemistry);
-    double percentage = ((physics + maths + chemistry) / 3.0);
+    double percentage = ((physics + maths + chemistry) / 300.0) * 100.0;
     printf("Percentage = %.2lf\n", percentage);
     if (percentage >= 90)
-        printf("Grade A\n");
+        printf("Grade A");
     else if (percentage >= 80)
-        printf("Grade B\n");
+        printf("Grade B");
     else if (percentage >= 70)
-        printf("Grade C\n");
+        printf("Grade C");
     else if (percentage >= 60)
-        printf("Grade D\n");
+        printf("Grade D");
     else if (percentage >= 40)
-        printf("Grade E\n");
+        printf("Grade E");
     else
-        printf("Grade F\n");
-    return 0;
+        printf("Grade F");
 }
 ```
 
