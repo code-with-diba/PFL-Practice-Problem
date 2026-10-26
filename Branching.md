@@ -241,7 +241,13 @@ int main() {
 
 ```
 
-## 14. Grade from marks 
+## 14.Write a C program to input marks of a subject and calculate the grade according to the 
+following: marks >= 90 : Grade A  
+marks >= 80 : Grade B  
+marks >= 70 : Grade C  
+marks >= 60 : Grade D  
+marks >= 40 : Grade E  
+marks < 40 : Grade F 
 
 ```c
 #include <stdio.h>
