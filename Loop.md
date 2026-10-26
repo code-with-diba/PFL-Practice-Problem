@@ -212,14 +212,13 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int n;
-    long long fact = 1;
+    int n,i,fact = 1;
     scanf("%d", &n);
-    for (int i = 1; i <= n; ++i)
+    for (i = 1; i <= n; i++)
         fact *= i;
-    printf("Factorial = %lld\n", fact);
-    return 0;
+    printf("Factorial = %d", fact);
 }
+
 ```
 
 ### 17. Find all factors of a number
