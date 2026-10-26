@@ -98,7 +98,13 @@ int main() {
 }
 ```
 
-### 4. Grade using switch case
+### 4. Write a C program using a switch-case statement to input the marks of a subject and calculate the grade according to the following:  
+marks >= 90 : Grade A  
+marks >= 80 : Grade B  
+marks >= 70 : Grade C  
+marks >= 60 : Grade D  
+marks >= 40 : Grade E  
+marks < 40 : Grade F
 
 ```c
 #include <stdio.h>
