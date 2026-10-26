@@ -24,13 +24,13 @@ int main() {
     int n;
     scanf("%d", &n);
     if (n > 0)
-        printf("Positive\n");
+        printf("Positive");
     else if (n < 0)
-        printf("Negative\n");
+        printf("Negative");
     else
-        printf("Zero\n");
-    return 0;
+        printf("Zero");
 }
+
 ```
 
 ## 3. Divisible by 5 and 11
