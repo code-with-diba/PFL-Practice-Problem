@@ -15,16 +15,14 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int n, choice;
+    int n, choice,count = 0,num;
     scanf("%d %d", &n, &choice);
-    int count = 0, num = (choice == 1) ? 1 : 2;
+    num = (choice == 1) ? 1 : 2;
     while (count < n) {
         printf("%d ", num);
         num += 2;
         count++;
     }
-    printf("\n");
-    return 0;
 }
 ```
 ### 3. Print all even numbers between 1 to n
