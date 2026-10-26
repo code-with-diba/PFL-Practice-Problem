@@ -252,22 +252,22 @@ marks < 40 : Grade F
 ```c
 #include <stdio.h>
 int main() {
-    double marks;
-    scanf("%lf", &marks);
-    if (marks >= 90)
-        printf("Grade A\n");
-    else if (marks >= 80)
-        printf("Grade B\n");
-    else if (marks >= 70)
-        printf("Grade C\n");
-    else if (marks >= 60)
-        printf("Grade D\n");
-    else if (marks >= 40)
-        printf("Grade E\n");
+    double m;
+    scanf("%lf", &m);
+    if (m >= 90)
+        printf("Grade A");
+    else if (m >= 80)
+        printf("Grade B");
+    else if (m >= 70)
+        printf("Grade C");
+    else if (m >= 60)
+        printf("Grade D");
+    else if (m >= 40)
+        printf("Grade E");
     else
-        printf("Grade F\n");
-    return 0;
+        printf("Grade F");
 }
+
 ```
 
 ## 15. Percentage and grade from three subjects
