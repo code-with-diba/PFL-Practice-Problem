@@ -168,17 +168,16 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int n, num, odd = 0, ever
+    int n,i, num, odd = 0, even=0;
     scanf("%d", &n);
-    for (int i = 0; i < n; i+
+    for (i = 1; i <= n; i++){
         scanf("%d", &num);
         if (num % 2 == 0)
             even++;
         else
             odd++;
     }
-    printf("Even = %d, Odd = 
-    return 0;
+    printf("Even = %d, Odd = %d",even,odd);
 }
 ```
 
