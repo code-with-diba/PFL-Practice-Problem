@@ -169,13 +169,13 @@ int main() {
     char ch;
     scanf("%c", &ch);
     if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
-        printf("Alphabet\n");
+        printf("Alphabet");
     else if (ch >= '0' && ch <= '9')
-        printf("Digit\n");
+        printf("Digit");
     else
-        printf("Special Character\n");
-    return 0;
+        printf("Special Character");
 }
+
 ```
 
 ## 11. Check whether a triangle's angles form a valid triangle
