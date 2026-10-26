@@ -69,14 +69,14 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int year;
-    scanf("%d", &year);
-    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
-        printf("Leap Year\n");
+    int y;
+    scanf("%d", &y);
+    if ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0))
+        printf("Leap Year");
     else
-        printf("Not a Leap Year\n");
-    return 0;
+        printf("Not a Leap Year");
 }
+
 ```
 
 ## 6. Alphabet check
