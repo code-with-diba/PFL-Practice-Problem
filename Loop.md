@@ -150,17 +150,16 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int n;
+    int n,i;
     double num, max;
     scanf("%d", &n);
-    scanf("%lf", &max);
-    for (int i = 1; i < n; i++) {
+    scanf("%lf", &max);// Considering the first number as max
+    for (i = 2; i <= n; i++) {// Loop runs one time less
         scanf("%lf", &num);
         if (num > max)
             max = num;
     }
-    printf("Maximum = %.2lf\n", max);
-    return 0;
+    printf("Maximum = %.2lf", max);
 }
 ```
 
