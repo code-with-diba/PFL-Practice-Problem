@@ -134,15 +134,14 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int n;
+    int n,i;
     double sum = 0, num;
     scanf("%d", &n);
-    for (int i = 0; i < n; i++) {
+    for (i = 1; i <= n; i++) {
         scanf("%lf", &num);
         sum += num;
     }
-    printf("Average = %.2lf\n", sum / n);
-    return 0;
+    printf("Average = %.2lf", sum / n);
 }
 ```
 
