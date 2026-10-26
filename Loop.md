@@ -125,8 +125,7 @@ int main() {
     scanf("%d", &n);
     for (i = 1; i <= n; i++)
         product *= i;
-    printf("Product = %lld\n", product);
-    return 0;
+    printf("Product = %d", product);
 }
 ```
 
