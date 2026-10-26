@@ -263,18 +263,16 @@ int main(){
 ```c
 #include <stdio.h>
 int main() {
-    int n;
+    int n,a = 0, b = 1, next;
     scanf("%d", &n);
-    long long a = 0, b = 1, next;
-    for (int i = 0; i < n; ++i) {
-        printf("%lld ", a);
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", a);
         next = a + b;
         a = b;
         b = next;
     }
-    printf("\n");
-    return 0;
 }
+
 ```
 
 ### 20. Check whether a number is an Armstrong number
