@@ -278,26 +278,23 @@ int main() {
 ### 20. Check whether a number is an Armstrong number
 ```c
 #include <stdio.h>
-#include <math.h>
+
 int main() {
-    int n, original, digit, digits = 0;
-    double sum = 0;
-    scanf("%d", &n);
-    original = n;
-    int temp = n;
+    int num, temp, r, sum = 0;
+    scanf("%d", &num);
+    temp = num;
     while (temp != 0) {
-        temp /= 10;
-        digits++;
+        r = temp % 10;
+        sum = sum + r * r * r;
+        temp = temp / 10;
     }
-    temp = n;
-    while (temp != 0) {
-        digit = temp % 10;
-        sum += pow(digit, digits);
-        temp /= 10;
+    if (num == sum) {
+        printf("Armstrong");
+    } else {
+        printf("Not Armstrong");
     }
-    printf("%s\n", (int)sum == original ? "Armstrong" : "Not Armstrong");
-    return 0;
 }
+
 ```
 
 ### 21. Count the number of digits in a number
