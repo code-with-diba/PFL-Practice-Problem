@@ -3,9 +3,9 @@
 ```c
 #include <stdio.h>
 int main() {
-    int n;
+    int n,i;
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++)
+    for (i = 1; i <= n; i++)
         printf("%d ", i);
 }
 ```
@@ -30,9 +30,9 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int n;
+    int n,i;
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++)
+    for (i = 1; i <= n; i++)
         if (i % 2 == 0)
             printf("%d ", i);
 }
@@ -43,9 +43,9 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int n;
+    int n,i;
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++)
+    for (i = 1; i <= n; i++)
         if (i % 2 != 0)
             printf("%d ", i);
 }
@@ -56,9 +56,9 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int n, sum = 0;
+    int n, sum = 0,i;
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++)
+    for (i = 1; i <= n; i++)
         sum += i;
     printf("Sum = %d", sum);
 }
@@ -69,9 +69,9 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int n, sum = 0;
+    int n, sum = 0,i;
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++)
+    for (i = 1; i <= n; i++)
         if (i % 2 == 0)
             sum += i;
     printf("Sum = %d", sum);
@@ -83,9 +83,9 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int n, sum = 0;
+    int n, sum = 0,i;
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++)
+    for (i = 1; i <= n; i++)
         if (i % 2 != 0)
             sum += i;
     printf("Sum = %d", sum);
@@ -97,9 +97,9 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int n, sum = 0;
+    int n, sum = 0,i;
     scanf("%d", &n);
-    for (int i = 2; i <= n; i += 3)
+    for (i = 2; i <= n; i += 3)
         sum += i;
     printf("Sum = %d", sum);
 }
@@ -110,9 +110,9 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int n;
+    int n,i;
     scanf("%d", &n);
-    for (int i = n; i >= 1; i--)
+    for (i = n; i >= 1; i--)
         printf("%d ", i);
 }
 ```
@@ -121,10 +121,9 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int n;
-    long long product = 1;
+    int n,i,product = 1;
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++)
+    for (i = 1; i <= n; i++)
         product *= i;
     printf("Product = %lld\n", product);
     return 0;
