@@ -214,31 +214,31 @@ int main() {
 }
 ```
 
-### 12. Write a C program to check whether the triangle is equilateral, isosceles, or scalene.
+### 13. Write a C program to find all roots of a quadratic equation.
 
 ```c
 #include <stdio.h>
+#include <math.h>
 
 int main() {
-    float a, b, c;
+    double a, b, c, d, root1, root2;
+    scanf("%lf %lf %lf", &a, &b, &c);
 
-    printf("Enter three sides of the triangle: ");
-    scanf("%f %f %f", &a, &b, &c);
+    d = b * b - 4 * a * c;
 
-    if (a + b > c && a + c > b && b + c > a) {
-        if (a == b && b == c) {
-            printf("The triangle is an Equilateral triangle.\n");
-        } else if (a == b || a == c || b == c) {
-            printf("The triangle is an Isosceles triangle.\n");
-        } else {
-            printf("The triangle is a Scalene triangle.\n");
-        }
-    } else {
-        printf("The triangle is not valid.\n");
+    if (d > 0) {
+        root1 = (-b + sqrt(d)) / (2 * a);
+        root2 = (-b - sqrt(d)) / (2 * a);
+        printf("Roots are real and different: %.2lf and %.2lf", root1, root2);
     }
-
-    return 0;
+    else if (d == 0) {
+        root1 = -b / (2 * a);
+        printf("Roots are real and equal: %.2lf\n", root1);
+    }
+    else
+        printf("Roots are complex and imaginary");
 }
+
 ```
 
 ## 14. Grade from marks 
