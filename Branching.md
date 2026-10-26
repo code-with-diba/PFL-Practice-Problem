@@ -56,12 +56,11 @@ int main() {
     int a, b, c;
     scanf("%d %d %d", &a, &b, &c);
     if (a >= b && a >= c)
-        printf("Maximum = %d\n", a);
+        printf("Maximum = %d", a);
     else if (b >= a && b >= c)
-        printf("Maximum = %d\n", b);
+        printf("Maximum = %d", b);
     else
-        printf("Maximum = %d\n", c);
-    return 0;
+        printf("Maximum = %d", c);
 }
 ```
 
