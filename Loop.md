@@ -200,13 +200,11 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int base, exp;
-    long long result = 1;
+    int base, exp,i,result = 1;
     scanf("%d %d", &base, &exp);
-    for (int i = 0; i < exp; ++i)
+    for (i = 1; i <= exp; ++i)
         result *= base;
-    printf("Result = %lld\n", result);
-    return 0;
+    printf("Result = %d", result);
 }
 ```
 
