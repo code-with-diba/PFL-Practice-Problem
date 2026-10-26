@@ -198,20 +198,19 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    float a, b, c;
-    scanf("%f %f %f", &a, &b, &c);
+    double a, b, c;
+    scanf("%lf %lf %lf", &a, &b, &c);
 
     if (a + b > c && a + c > b && b + c > a) {
-        if (a == b && b == c) {
-            printf("The triangle is an Equilateral triangle.\n");
-        } else if (a == b || a == c || b == c) {
-            printf("The triangle is an Isosceles triangle.\n");
-        } else {
-            printf("The triangle is a Scalene triangle.\n");
-        }
-    } else {
-        printf("The triangle is not valid.\n");
-    }
+        if (a == b && b == c) 
+            printf("Equilateral");
+         else if (a == b || a == c || b == c) 
+            printf("Isosceles");
+         else 
+            printf("Scalene");
+    } 
+        else 
+        printf("The triangle is not valid");
 }
 ```
 
