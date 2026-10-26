@@ -48,8 +48,6 @@ int main() {
     for (int i = 1; i <= n; i++)
         if (i % 2 != 0)
             printf("%d ", i);
-    printf("\n");
-    return 0;
 }
 ```
 
@@ -62,8 +60,7 @@ int main() {
     scanf("%d", &n);
     for (int i = 1; i <= n; i++)
         sum += i;
-    printf("Sum = %d\n", sum);
-    return 0;
+    printf("Sum = %d", sum);
 }
 ```
 
@@ -77,8 +74,7 @@ int main() {
     for (int i = 1; i <= n; i++)
         if (i % 2 == 0)
             sum += i;
-    printf("Sum = %d\n", sum);
-    return 0;
+    printf("Sum = %d", sum);
 }
 ```
 
@@ -92,8 +88,7 @@ int main() {
     for (int i = 1; i <= n; i++)
         if (i % 2 != 0)
             sum += i;
-    printf("Sum = %d\n", sum);
-    return 0;
+    printf("Sum = %d", sum);
 }
 ```
 
@@ -106,8 +101,7 @@ int main() {
     scanf("%d", &n);
     for (int i = 2; i <= n; i += 3)
         sum += i;
-    printf("Sum = %d\n", sum);
-    return 0;
+    printf("Sum = %d", sum);
 }
 ```
 
@@ -120,8 +114,6 @@ int main() {
     scanf("%d", &n);
     for (int i = n; i >= 1; i--)
         printf("%d ", i);
-    printf("\n");
-    return 0;
 }
 ```
 ### 10. Product of all natural numbers between 1 to n
