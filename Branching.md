@@ -270,7 +270,14 @@ int main() {
 
 ```
 
-## 15. Percentage and grade from three subjects
+## 15.Write a C program to input marks in three subjects: Physics, Mathematics, and Computer. 
+Calculate the percentage and grade according to the following:  
+Percentage >= 90% : Grade A  
+Percentage >= 80% : Grade B  
+Percentage >= 70% : Grade C  
+Percentage >= 60% : Grade D  
+Percentage >= 40% : Grade E  
+Percentage < 40% : Grade F
 
 ```c
 #include <stdio.h>
