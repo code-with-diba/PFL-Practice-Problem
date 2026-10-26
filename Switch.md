@@ -5,18 +5,34 @@
 int main() {
     int day;
     scanf("%d", &day);
-    switch (day) {
-        case 1: printf("Sunday\n");
-        case 2: printf("Monday\n");
-        case 3: printf("Tuesday\n");
-        case 4: printf("Wednesday\n");
-        case 5: printf("Thursday\n");
-        case 6: printf("Friday\n");
-        case 7: printf("Saturday\n");
-        default: printf("Invalid day\n");
+    switch (day)
+    {
+        case 1:
+            printf("Sunday");
+            break;
+        case 2:
+            printf("Monday");
+            break;
+        case 3:
+            printf("Tuesday");
+            break;
+        case 4:
+            printf("Wednesday");
+            break;
+        case 5:
+            printf("Thursday");
+            break;
+        case 6:
+            printf("Friday");
+            break;
+        case 7:
+            printf("Saturday");
+            break;
+        default:
+            printf("Invalid day");
     }
-    return 0;
 }
+
 ```
 
 ### 2. Simple calculator using switch case
