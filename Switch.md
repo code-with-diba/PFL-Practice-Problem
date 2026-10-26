@@ -82,20 +82,19 @@ int main() {
     switch (ch) {
         case 'r':
         case 'R':
-            printf("RED\n");
+            printf("RED");
             break;
         case 'g':
         case 'G':
-            printf("GREEN\n");
+            printf("GREEN");
             break;
         case 'b':
         case 'B':
-            printf("BLUE\n");
+            printf("BLUE");
             break;
         default:
-            printf("BLACK\n");
+            printf("BLACK");
     }
-    return 0;
 }
 ```
 
