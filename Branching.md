@@ -101,19 +101,24 @@ int main() {
 }
 ```
 
-### 7. Uppercase or lowercase
+### 7. Uppercase or lowercase(Nested if-else)
 
 ```c
 #include <stdio.h>
+
 int main() {
     char ch;
     scanf("%c", &ch);
-    if (ch >= 'A' && ch <= 'Z')
-        printf("Uppercase");
-    else if (ch >= 'a' && ch <= 'z')
-        printf("Lowercase");
-    else
-        printf("Not an alphabet");
+
+    if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')){
+
+        if (ch >= 'A' && ch <= 'Z')
+            printf("Uppercase");
+         else
+            printf("Lowercase");
+    }
+        else
+        printf("%c is not a valid alphabet letter.\n", ch);
 }
 ```
 
