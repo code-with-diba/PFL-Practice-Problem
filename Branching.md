@@ -87,10 +87,9 @@ int main() {
     char ch;
     scanf("%c", &ch);
     if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
-        printf("Alphabet\n");
+        printf("Alphabet");
     else
-        printf("Not an Alphabet\n");
-    return 0;
+        printf("Not an Alphabet");
 }
 ```
 
