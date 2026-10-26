@@ -186,10 +186,9 @@ int main() {
     double a1, a2, a3;
     scanf("%lf %lf %lf", &a1, &a2, &a3);
     if (a1 > 0 && a2 > 0 && a3 > 0 && (a1 + a2 + a3 == 180))
-        printf("Valid Triangle\n");
+        printf("Valid Triangle");
     else
-        printf("Invalid Triangle\n");
-    return 0;
+        printf("Invalid Triangle");
 }
 ```
 
