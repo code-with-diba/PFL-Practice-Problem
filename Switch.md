@@ -112,7 +112,7 @@ int main() {
     double marks;
     scanf("%lf", &marks);
     switch ((int)(marks / 10))
- {
+   {
         case 10:
         case 9:
             printf("Grade A");
