@@ -316,6 +316,5 @@ int main() {
         if (count > 0)
             printf("Notes of %d = %d\n", notes[i], count);
     }
-    return 0;
 }
 ```
