@@ -114,24 +114,24 @@ int main() {
     switch ((int)(marks / 10)) {
         case 10:
         case 9:
-            printf("Grade A\n");
+            printf("Grade A");
             break;
         case 8:
-            printf("Grade B\n");
+            printf("Grade B");
             break;
         case 7:
-            printf("Grade C\n");
+            printf("Grade C");
             break;
         case 6:
-            printf("Grade D\n");
+            printf("Grade D");
             break;
         case 5:
         case 4:
-            printf("Grade E\n");
+            printf("Grade E");
             break;
         default:
-            printf("Grade F\n");
+            printf("Grade F");
     }
-    return 0;
 }
+
 ```
