@@ -38,29 +38,38 @@ int main() {
 ### 2. Simple calculator using switch case
 
 ```c
-#include <stdio.h>
-int main() {
-    double a, b, result;
+#include<stdio.h>
+int main()
+{
+    double a,b;
     char op;
-    scanf("%lf %c %lf", &a, &b);
-    switch (op) {
-        case '+': result = a + b; break;
-        case '-': result = a - b; break;
-        case '*': result = a * b; break;
+    scanf("%lf %c %lf",&a,&op,&b);
+
+    switch(op)
+    {
+        case '+':
+        printf("%.2lf",a+b);
+        break;
+
+        case '-':
+        printf("%.2lf",a-b);
+        break;
+
+        case '*':
+        printf("%.2lf",a*b);
+        break;
+
         case '/':
-            if (b == 0) {
-                printf("Division by zero error\n");
-                return 0;
-            }
-            result = a / b;
+         if(b!=0)
+            printf("%.2lf",a/b);
+         else
+            printf("Cannot divide by zero");
             break;
         default:
-            printf("Invalid operator\n");
-            return 0;
-    }
-    printf("Result = %.2lf\n", result);
-    return 0;
+            printf("Invalid operator");
+        }
 }
+
 ```
 
 ### 3. RED, GREEN, BLUE, BLACK message using switch case
