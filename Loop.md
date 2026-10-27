@@ -357,18 +357,23 @@ int main() {
 
 ### 24. Check whether a number is palindrome or not
 ```c
-#include <stdio.h>
+#include<stdio.h>
 int main() {
-    int n, original, reverse = 0;
-    scanf("%d", &n);
-    original = n;
-    while (n != 0) {
-        reverse = reverse * 10 + n % 10;
-        n /= 10;
+    int num,temp,r,sum=0;
+    scanf("%d",&num);
+    temp = num;
+    while(temp!=0)
+    {
+        r = temp % 10;
+        sum= sum * 10 + r;
+        temp=temp/10;
     }
-    printf("%s\n", (original == reverse) ? "Palindrome" : "Not Palindrome");
-    return 0;
+    if(num == sum)
+        printf("Palindrome");
+    else
+        printf("Not palindrome");
 }
+```
 ### 25. Check whether a number is an Armstrong number
 ```c
 #include <stdio.h>
