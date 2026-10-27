@@ -278,21 +278,20 @@ int main() {
 ### 20. Check whether a number is an Armstrong number
 ```c
 #include <stdio.h>
-
 int main() {
     int num, temp, r, sum = 0;
     scanf("%d", &num);
     temp = num;
-    while (temp != 0) {
+    while (temp != 0) 
+    {
         r = temp % 10;
         sum = sum + r * r * r;
         temp = temp / 10;
     }
-    if (num == sum) {
+    if (num == sum) 
         printf("Armstrong");
-    } else {
+     else 
         printf("Not Armstrong");
-    }
 }
 
 ```
