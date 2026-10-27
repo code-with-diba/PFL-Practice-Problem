@@ -497,21 +497,21 @@ int main() {
 ### 31. Convert Hexadecimal to Decimal
 ```c
 #include <stdio.h>
-#include <string.h>
-#include <ctype.h>
 int main() {
-    char hex[20];
+    char hex[100];
+    long long decimal = 0;
+    int i;
     scanf("%s", hex);
-    int len = strlen(hex);
-    long decimal = 0, base = 1;
-    for (int i = len - 1; i >= 0; i--) {
-        char c = toupper(hex[i]);
-        int value = (c >= '0' && c <= '9') ? (c - '0') : (c - 'A' + 10);
-        decimal += value * base;
-        base *= 16;
+    for (i = 0; hex[i] != '\0'; i++) {
+        decimal = decimal * 16;
+        if (hex[i] >= '0' && hex[i] <= '9')
+            decimal =decimal + (hex[i] - '0');
+        else if (hex[i] >= 'a' && hex[i] <= 'f')
+            decimal =decimal + (hex[i] - 'a' + 10);
+        else if (hex[i] >= 'A' && hex[i] <= 'F')
+            decimal =decimal + (hex[i] - 'A' + 10);
     }
-    printf("Decimal = %ld\n", decimal);
-    return 0;
+    printf("Decimal : %lld", decimal);
 }
 ```
 
