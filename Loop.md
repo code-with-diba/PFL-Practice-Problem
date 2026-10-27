@@ -342,7 +342,7 @@ int main() {
     if (n == 0)
         printf("Zero");
     if (n < 0) {
-        printf("Minus ");//Space
+        printf("Minus ");//Space is important
         n = -n;
     }
     while (n != 0) {
@@ -350,7 +350,7 @@ int main() {
         n = n / 10;
     }
     for (i = count - 1; i >= 0; i--)
-        printf("%s ", words[i]);//Space
+        printf("%s ", words[i]);//Space is important
 }
 
 ```
