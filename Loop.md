@@ -355,6 +355,20 @@ int main() {
 
 ```
 
+### 24. Check whether a number is palindrome or not
+```c
+#include <stdio.h>
+int main() {
+    int n, original, reverse = 0;
+    scanf("%d", &n);
+    original = n;
+    while (n != 0) {
+        reverse = reverse * 10 + n % 10;
+        n /= 10;
+    }
+    printf("%s\n", (original == reverse) ? "Palindrome" : "Not Palindrome");
+    return 0;
+}
 ### 25. Check whether a number is an Armstrong number
 ```c
 #include <stdio.h>
@@ -375,20 +389,7 @@ int main() {
 }
 
 ```
-### 25. Check whether a number is palindrome or not
-```c
-#include <stdio.h>
-int main() {
-    int n, original, reverse = 0;
-    scanf("%d", &n);
-    original = n;
-    while (n != 0) {
-        reverse = reverse * 10 + n % 10;
-        n /= 10;
-    }
-    printf("%s\n", (original == reverse) ? "Palindrome" : "Not Palindrome");
-    return 0;
-}
+
 ```
 
 ### 26. HCF (GCD) of two numbers
