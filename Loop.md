@@ -291,43 +291,6 @@ int main() {
 }
 ```
 
-### 20. Check whether a number is an Armstrong number
-```c
-#include <stdio.h>
-int main() {
-    int num, temp, r, sum = 0;
-    scanf("%d", &num);
-    temp = num;
-    while (temp != 0) 
-    {
-        r = temp % 10;
-        sum = sum + r * r * r;
-        temp = temp / 10;
-    }
-    if (num == sum) 
-        printf("Armstrong");
-     else 
-        printf("Not Armstrong");
-}
-
-```
-
-### 21. Count the number of digits in a number
-```c
-#include<stdio.h>
-int main() {
-    int num,count=0;
-    scanf("%d",&num);
-
-    while(num!=0)
-    {
-        num=num/10;
-        ++count;
-    }
-      printf("Number of digits = %d",count);
-}
-```
-
 ### 22. Sum of digits of a number
 ```c
 #include <stdio.h>
@@ -383,6 +346,26 @@ int main() {
 }
 ```
 
+### 25. Check whether a number is an Armstrong number
+```c
+#include <stdio.h>
+int main() {
+    int num, temp, r, sum = 0;
+    scanf("%d", &num);
+    temp = num;
+    while (temp != 0) 
+    {
+        r = temp % 10;
+        sum = sum + r * r * r;
+        temp = temp / 10;
+    }
+    if (num == sum) 
+        printf("Armstrong");
+     else 
+        printf("Not Armstrong");
+}
+
+```
 ### 25. Check whether a number is palindrome or not
 ```c
 #include <stdio.h>
