@@ -314,16 +314,21 @@ int main()
 
 ### 22. Reverse of a number
 ```c
-#include <stdio.h>
+#include<stdio.h>
 int main() {
-    int n, reverse = 0;
-    scanf("%d", &n);
-    while (n != 0) {
-        reverse = reverse * 10 + n % 10;
-        n /= 10;
+    int num,temp,r,sum=0;
+    scanf("%d",&num);
+
+    temp = num;
+
+    while(temp!=0)
+    {
+        r = temp % 10;
+        sum= sum * 10 + r;
+        temp=temp/10;
     }
-    printf("Reverse = %d\n", reverse);
-    return 0;
+
+    printf("Reverse of number = %d",sum);
 }
 ```
 
