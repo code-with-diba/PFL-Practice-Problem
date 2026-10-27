@@ -275,7 +275,7 @@ int main() {
 
 ```
 
-### 21. Count the number of digits in a number
+### 20. Count the number of digits in a number
 ```c
 #include<stdio.h>
 int main() {
