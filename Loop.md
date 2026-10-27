@@ -289,6 +289,7 @@ int main() {
     }
       printf("Number of digits = %d",count);
 }
+```
 
 ### 20. Check whether a number is an Armstrong number
 ```c
