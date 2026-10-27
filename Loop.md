@@ -275,6 +275,21 @@ int main() {
 
 ```
 
+### 21. Count the number of digits in a number
+```c
+#include<stdio.h>
+int main() {
+    int num,count=0;
+    scanf("%d",&num);
+
+    while(num!=0)
+    {
+        num=num/10;
+        ++count;
+    }
+      printf("Number of digits = %d",count);
+}
+
 ### 20. Check whether a number is an Armstrong number
 ```c
 #include <stdio.h>
