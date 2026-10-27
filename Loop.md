@@ -441,18 +441,21 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    long long binary, complement = 0;
-    int place = 1, remainder;
-    scanf("%lld", &binary);
-    while (binary != 0) {
-        remainder = binary % 10;
-        complement += (1 - remainder) * place;
-        place *= 10;
-        binary /= 10;
+    char binary[100];
+    int i;
+    scanf("%s", binary);
+    for (i = 0; binary[i] != '\0'; i++)
+    {
+        if (binary[i] == '0') {
+            binary[i] = '1';
+        }
+        else if (binary[i] == '1') {
+            binary[i] = '0';
+        }
     }
-    printf("One's complement = %lld\n", complement);
-    return 0;
+    printf("One's complement: %s\n", binary);
 }
+
 ```
 
 ### 29. Convert Decimal to Binary
