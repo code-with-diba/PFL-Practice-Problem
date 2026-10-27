@@ -332,7 +332,7 @@ int main() {
 }
 ```
 
-### 24. Print a number in words
+### 23. Print a number in words
 ```c
 #include <stdio.h>
 int main() {
