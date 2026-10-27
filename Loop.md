@@ -298,17 +298,17 @@ int main() {
 
 ### 21. Count the number of digits in a number
 ```c
-#include <stdio.h>
+#include<stdio.h>
 int main() {
-    int n, count = 0;
-    scanf("%d", &n);
-    if (n == 0) count = 1;
-    while (n != 0) {
-        n /= 10;
-        count++;
+    int num,count=0;
+    scanf("%d",&num);
+
+    while(num!=0)
+    {
+        num=num/10;
+        ++count;
     }
-    printf("Digits = %d\n", count);
-    return 0;
+      printf("Number of digits = %d",count);
 }
 ```
 
