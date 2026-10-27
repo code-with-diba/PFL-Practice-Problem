@@ -336,25 +336,23 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int n;
-    char *digits[10] = {"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
-    char *words[20];
-    int count = 0;
+    int n, i, count = 0;
+    char *digits[10] = {"Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"},*words[20];
     scanf("%d", &n);
-    if (n == 0) {
-        printf("Zero\n");
-        return 0;
+    if (n == 0)
+        printf("Zero");
+    if (n < 0) {
+        printf("Minus ");//Space
+        n = -n;
     }
     while (n != 0) {
         words[count++] = digits[n % 10];
-        n /= 10;
+        n = n / 10;
     }
-    for (int i = count - 1; i >= 0; i--) {
-        printf("%s ", words[i]);
-    }
-    printf("\n");
-    return 0;
+    for (i = count - 1; i >= 0; i--)
+        printf("%s ", words[i]);//Space
 }
+
 ```
 
 ### 25. Check whether a number is an Armstrong number
