@@ -291,22 +291,28 @@ int main() {
 }
 ```
 
-### 22. Sum of digits of a number
+### 21. Sum of digits of a number
 ```c
-#include <stdio.h>
-int main() {
-    int n, sum = 0;
-    scanf("%d", &n);
-    while (n != 0) {
-        sum += n % 10;
-        n /= 10;
+#include<stdio.h>
+int main()
+{
+    int num,temp,r,sum=0;
+    scanf("%d",&num);
+
+    temp = num;
+
+    while(temp!=0)
+    {
+        r = temp % 10;
+        sum= sum + r;
+        temp=temp/10;
     }
-    printf("Sum of digits = %d\n", sum);
-    return 0;
+
+    printf("Sum of digits = %d",sum);
 }
 ```
 
-### 23. Reverse of a number
+### 22. Reverse of a number
 ```c
 #include <stdio.h>
 int main() {
