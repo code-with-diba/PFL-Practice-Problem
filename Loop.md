@@ -395,8 +395,6 @@ int main() {
 
 ```
 
-```
-
 ### 26. HCF (GCD) of two numbers
 ```c
 #include <stdio.h>
