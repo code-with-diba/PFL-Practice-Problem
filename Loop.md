@@ -518,31 +518,33 @@ int main() {
 ### 32. Convert Octal to Hexadecimal
 ```c
 #include <stdio.h>
-#include <string.h>
 int main() {
-    char octal[20];
+    char octal[100], hex[100];
+    long long decimal = 0;
+    int i, index = 0;
     scanf("%s", octal);
-    int len = strlen(octal);
-    long decimal = 0, base = 1;
-    for (int i = len - 1; i >= 0; i--) {
-        decimal += (octal[i] - '0') * base;
-        base *= 8;
+    for (i = 0; octal[i] != '\0'; i++) {
+        if (octal[i] >= '0' && octal[i] <= '7')
+            decimal = decimal * 8 + (octal[i] - '0');
     }
-    char hexDigits[] = "0123456789ABCDEF";
-    char hex[20];
-    int index = 0;
-    if (decimal == 0) {
-        printf("0\n");
-        return 0;
-    }
-    while (decimal > 0) {
-        hex[index++] = hexDigits[decimal % 16];
-        decimal /= 16;
-    }
-    for (int i = index - 1; i >= 0; i--) {
-        printf("%c", hex[i]);
-    }
-    printf("\n");
-    return 0;
+    long long temp = decimal;
+    if (decimal == 0)
+        printf("Hexadecimal : 0");
+     else {
+        while (temp > 0) {
+            int rem = temp % 16;
+            if (rem < 10)
+                hex[index++] = rem + '0';
+            else
+                hex[index++] = rem - 10 + 'A';
+
+            temp = temp / 16;
+        }
+        hex[index] = '\0';
+        printf("Hexadecimal : ");
+        for (i = index - 1; i >= 0; i--)
+            printf("%c", hex[i]);
+        }
 }
+
 ```
