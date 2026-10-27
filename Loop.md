@@ -480,22 +480,18 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int n, octal[32], count = 0;
+    int n,i, octal[32], count = 0;
     scanf("%d", &n);
-    if (n == 0) {
-        printf("0\n");
-        return 0;
-    }
+    if (n == 0)
+        printf("0");
     while (n > 0) {
         octal[count++] = n % 8;
-        n /= 8;
+        n =n / 8;
     }
-    for (int i = count - 1; i >= 0; i--) {
+    for (i = count - 1; i >= 0; i--)
         printf("%d", octal[i]);
-    }
-    printf("\n");
-    return 0;
 }
+
 ```
 
 ### 31. Convert Hexadecimal to Decimal
