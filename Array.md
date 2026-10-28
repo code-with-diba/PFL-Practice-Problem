@@ -147,25 +147,18 @@ int main(){
 
 ```c
 #include<stdio.h>
-
 int main(){
     int i,n,a[1000],k,v;
     scanf("%d",&n);
-    // array input
     for(i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
-    // input k and v (K is possiton & v is value of that possiton)
     scanf("%d %d", &k,&v);
-    // will empty a possiton to incert value k in k - 1 index
     for(i=n-1;i>=k-1;i--){
        a[i+1] = a[i];
     }
-    // in that k - 1 index will put the value v
     a[k-1] = v;
-    // since we added 1 exta element to the array n + 1 
     n++;
-    // printing updated array
     for(i=0;i<n;i++){
         printf("%d ",a[i]);
     }
