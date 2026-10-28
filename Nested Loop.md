@@ -12,13 +12,12 @@ int main() {
                 break;
             }
         }
-        if (isPrime) {
+        if (isPrime)
             printf("%d ", i);
-        }
+
     }
-    printf("\n");
-    return 0;
 }
+
 ```
 
 ### 2. Print all Perfect numbers between 1 to n
