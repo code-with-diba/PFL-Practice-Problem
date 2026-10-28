@@ -139,9 +139,9 @@ int main() {
 
 ```
 
-### Pattern A AB...
+### Pattern Alphabet
 ```c
-Input - Enter N = 5
+Input - Enter N = 4
 Output -
 A
 AB
@@ -149,18 +149,22 @@ ABC
 ABCD
 ````
 ```c
-#include <stdio.h>
-int main() {
-    int r,c,n;
-    printf("Enter N = ");
+#include<stdio.h>
+int main()
+{
+    int n,a,d,i,j;
     scanf("%d",&n);
-    for(r = 1;r <= n; r++){
-        for(c = 1;c < r; c++)
-            printf("%c",c+64);
+
+    for(i=1;i<=n;i++){
+        a=1;
+        for(j=1;j<=i;j++){
+           d=a+64;
+           char ch = (char)d;
+           printf("%c ",ch);
+           a++;
         }
-        printf("\n ");
-    }
-    return 0;
+        printf("\n");
+          }
 }
 ```
 
