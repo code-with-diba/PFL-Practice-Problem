@@ -99,31 +99,27 @@ int main(){
 
 ```c
 #include<stdio.h>
-
 int main(){
     int i,n,a[1000],k,f=0;
     scanf("%d",&n);
-    // array input
     for(i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
-    // input k value for seach
     scanf("%d",&k);
-    // checking if k value is in the array if yes f = true and loop breaks.
     for(i=0;i<n;i++){
         if(a[i] == k){
             f = 1;
             break;
         }
     }
-    // if f == 1 it means the value is in the element 
-    if(f==1) {   //else No (if f == 0 it means its not in the array)
+    if(f==1) {
         printf("Yes");
     }
     else{
         printf("No");
     }
 }
+
 ```
 
 ### 6. Write a C program to delete an element in an array at a specified position.
