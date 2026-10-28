@@ -115,9 +115,9 @@ int main() {
 
 ```
 
-### Pattern number
+### 5.Pattern number
 ```c
-Input - Enter N = 5
+Input - Enter N = 4
 Output -
 1
 1 2
@@ -125,19 +125,7 @@ Output -
 1 2 3 4
 ```
 ```c
-#include <stdio.h>
-int main() {
-    int r,c,n;
-    printf("Enter N = ");
-    scanf("%d",&n);
-    for(r = 1;r <= n; r++){
-        for(c = 1;c < r; c++)
-            printf("%d ",c);
-        }
-        printf("\n ");
-    }
-    return 0;
-}
+
 ```
 
 ### Pattern A AB...
