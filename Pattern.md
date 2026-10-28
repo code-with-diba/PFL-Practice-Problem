@@ -91,26 +91,28 @@ int main() {
 }
 ```
 
-### 3. Pyramid
-
+### 4. Star pattern (right triangle)
+```c
+input = n=5
+*
+* *
+* * *
+* * * *
+* * * * *
+```
 ```c
 #include <stdio.h>
-
 int main() {
-    int r, c, n;
+    int n,i,j;
     scanf("%d", &n);
-    for(r = 1; r < n; r++){
-        for(c = 1; c < n; c++){
-            printf(" ");
-        }
-        for(c = 1; c < r; c++){
-            printf("* ");
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("*");
         }
         printf("\n");
     }
-
-    return 0;
 }
+
 ```
 
 ### Pattern number
