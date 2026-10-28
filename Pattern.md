@@ -138,8 +138,28 @@ int main() {
 }
 
 ```
+### 6.pattern number
+```c
+1
+2 2
+3 3 3
+4 4 4 4
+```
+```c
+#include <stdio.h>
+int main() {
+    int n,i,j;
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("%d ",i);
+        }
+        printf("\n");
+    }
+}
+```
 
-### 6.Pattern Alphabet
+### 7.Pattern Alphabet
 ```c
 Input - Enter N = 4
 Output -
@@ -168,7 +188,7 @@ int main()
 }
 ```
 
-### 7.Diamond Shape Pattern
+### 8.Diamond Shape Pattern
 ```c
 Enter N = 5
     *
@@ -208,7 +228,7 @@ int main() {
 
 ```
 
-### 8.Holo Diamond
+### 9.Holo Diamond
 ```c
 Enter N = 5
 *
