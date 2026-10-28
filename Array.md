@@ -80,22 +80,19 @@ int main(){
 
 ```c
 #include<stdio.h>
-
 int main(){
-    int i,n,a[1000],c=0;
+    int i,n,a[1000],count=0;
     scanf("%d",&n);
-    // array input
     for(i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
-    // checking if the value is Negative or not if so c++ mean count + 1 
     for(i=0;i<n;i++){
-        if(a[i]<0) // a[i] < 0 if true mean its negative
-            c++;
+        if(a[i]<0)
+            count++;
     }
-    printf("Total Negative = %d",c);
-
+    printf("Total Negative = %d",count);
 }
+
 ```
 
 ### 5. Write a C program to search for an element in an array.
