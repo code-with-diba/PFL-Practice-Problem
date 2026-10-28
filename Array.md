@@ -41,24 +41,20 @@ MAX
 
 ```c
 #include<stdio.h>
-
 int main(){
     int i,n,a[1000],max;
     scanf("%d",&n);
-    // array input
     for(i=0; i<n; i++){
         scanf("%d",&a[i]);
     }
-    // max = index value 0 element
     max=a[0];
-    // checking if other element are grater then max if so max = that element.
     for(i=1; i<n; i++){
         if(max<a[i])
             max=a[i];
     }
     printf("Maximum = %d",max);
-
 }
+
 ```
 
 ### MINIMUM
