@@ -41,6 +41,11 @@ int main() {
 ```
 
 ### 3. Star pattern (right triangle)
+*
+* *
+* * *
+* * * *
+* * * * *
 ```c
 #include <stdio.h>
 int main() {
