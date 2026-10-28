@@ -139,7 +139,7 @@ int main() {
 
 ```
 
-### Pattern Alphabet
+### 6.Pattern Alphabet
 ```c
 Input - Enter N = 4
 Output -
