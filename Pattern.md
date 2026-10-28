@@ -183,32 +183,29 @@ Enter N = 5
 ```
 ```c
 #include <stdio.h>
-
 int main() {
-    int r,c,n;
-    printf("Enter N = ");
+    int n,i,j,k;
     scanf("%d",&n);
-    for(r = 1;r < n; r++){
-        for(c = 1; c <=n-r; c++){
+    for(i = 1;i < n; i++){
+        for(j = 1; j <=n-i;j ++){
             printf(" ");
         }
-        for(c = 1; c <=r; c++){
+        for(k = 1;k  <= i;k ++){
             printf("* ");
         }
         printf("\n");
     }
-    for(r = n;r >=1; r--){
-        for(c = 1; c <=n-r; c++){
+    for(i = n;i >=1;i --){
+        for(j = 1;j  <=n-i;j ++){
             printf(" ");
         }
-        for(c = 1; c <=r; c++){
+        for(k = 1; k <=i;k ++){
             printf("* ");
         }
         printf("\n");
     }
-
-    return 0;
 }
+
 ```
 
 ### 8.Holo Diamond
