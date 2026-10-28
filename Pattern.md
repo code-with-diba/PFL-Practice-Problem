@@ -43,27 +43,23 @@ Output --
 * * * * *
 ```
 ```c
-#include <stdio.h>
+#include<stdio.h>
+int main()
+{
+    int n,nst=1,i,j,k;
+    scanf("%d",&n);
 
-int main(){
-    int i, j, n;
-
-    printf("Enter n: ");
-    scanf("%d", &n);
-
-    for(i = 1; i <= n; i++){
-        for(j = 1; j <= n - i; j++){
+    for(i=1;i<=n;i++){
+        for(j=1;j<=n-i;j++){
             printf(" ");
         }
-
-        for(j = 1; j <= i; j++){
-            printf("* ");
+        for(k=1;k<=nst;k++){
+            printf("*");
         }
 
+        nst=nst+2;
         printf("\n");
     }
-
-    return 0;
 }
 ```
 
