@@ -41,25 +41,26 @@ int main() {
 ```
 
 ### 3. Star pattern (right triangle)
+```c
 *
 * *
 * * *
 * * * *
 * * * * *
-
+```
 ```c
 #include <stdio.h>
 int main() {
-    int n;
+    int n,i,j;
     scanf("%d", &n);
-    for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= i; j++) {
-            printf("* ");
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("*");
         }
         printf("\n");
     }
-    return 0;
 }
+
 ```
 
 ### 4. Pascal's triangle up to n rows
