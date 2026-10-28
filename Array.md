@@ -2,22 +2,18 @@
 
 ```c
 #include<stdio.h>
-
 int main(){
-
     int i,n,a[1000],sum=0;
     scanf("%d",&n);
-    // input array
     for(i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
-    // calculating sum
     for(i=0;i<n;i++){
-        sum+=a[i];
+        sum=sum+a[i];
     }
     printf("%d",sum);
-
 }
+
 ```
 
 ### 2. Write a C program to find the sum of all array elements except the index value /element.
