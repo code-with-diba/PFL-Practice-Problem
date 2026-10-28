@@ -61,23 +61,18 @@ int main(){
 
 ```c
 #include<stdio.h>
-
 int main(){
     int i,n,a[1000],min;
     scanf("%d",&n);
-    // array input
     for(i=0; i<n; i++){
         scanf("%d",&a[i]);
     }
-    // min = index value 0 element
     min=a[0];
-    // checking if other element are less then min if so min = that element.
     for(i=1; i<n; i++){
         if(min>a[i])
             min=a[i];
     }
     printf("Minimum = %d",min);
-
 }
 ```
 
