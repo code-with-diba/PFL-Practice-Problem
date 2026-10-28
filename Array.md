@@ -24,23 +24,18 @@ int main(){
 
 ```c
 #include<stdio.h>
-
 int main(){
     int i,n,a[1000],sum=0,k;
     scanf("%d",&n);
-    // array input
     for(i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
-    // k value input
     scanf("%d",&k);
-    // sum of all element value except k
     for(i=0;i<n;i++){
         if(i!=k)
-            sum+=a[i];
+            sum=sum+a[i];
     }
     printf("%d",sum);
-
 }
 ```
 
