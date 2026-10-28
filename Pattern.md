@@ -272,27 +272,19 @@ Output -
 
 ```c
 #include <stdio.h>
-
 int main() {
-    int r,c,n = 5;
-    printf("Enter N = %d \n",
-
-    for(r = 1;r <=n; r++){
-        for(c=1;c<=n-r;c++){
-            printf(" ");
-        }
-        for(c = 1; c<=2*r; c+
-            if(c==1 || r==n |
+    int n,i,j;
+    scanf("%d",&n);
+    for(i = 1;i <=n;i ++){
+        for(j = 1;j <=i;j ++){
+            if(j==1 || i==n || j==i)
                 printf("*");
-            }
-            else{
+            else
                 printf(" ");
-            }
-        }
-        for(c=1;c<=2*n-r;c++)
-            printf(" ");
+
         }
         printf("\n");
     }
 }
+
 ```
