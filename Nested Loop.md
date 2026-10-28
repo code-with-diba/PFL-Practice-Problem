@@ -42,6 +42,7 @@ int main() {
 
 ### 3. Star pattern (right triangle)
 ```c
+input = n=5
 *
 * *
 * * *
@@ -64,6 +65,14 @@ int main() {
 ```
 
 ### 4. Pascal's triangle up to n rows
+```c
+input = n=5
+1
+1 1
+1 2 1
+1 3 3 1
+1 4 6 4 1
+```
 ```c
 #include <stdio.h>
 int main() {
