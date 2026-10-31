@@ -132,7 +132,7 @@ int main(){
         scanf("%d",&a[i]);
     }
     scanf("%d",&k);//k=Position
-    for(i=k-1;i<n-1;i++){//loop starts from k's index 
+    for(i=k-1;i<n-1;i++){//loop starts from k's index and ends last index
         a[i]=a[i+1];
     }
     n--;
