@@ -125,15 +125,14 @@ int main(){
 ### 6. Write a C program to delete an element in an array at a specified position.
 
 ```c
-#include<stdio.h>
 int main(){
     int i,n,a[1000],k;
     scanf("%d",&n);
     for(i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
-    scanf("%d",&k);
-    for(i=k-1;i<n-1;i++){
+    scanf("%d",&k);//k=Position
+    for(i=k-1;i<n-1;i++){//loop starts from k's index 
         a[i]=a[i+1];
     }
     n--;
@@ -141,6 +140,7 @@ int main(){
         printf("%d ",a[i]);
     }
 }
+
 ```
 
 ### 7. Write a C program to insert an element from an array at a specified position.
