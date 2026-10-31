@@ -153,8 +153,8 @@ int main(){
     for(i=0;i<n;i++){
         scanf("%d",&a[i]);
     }
-    scanf("%d %d", &k,&v);
-    for(i=n-1;i>=k-1;i--){
+    scanf("%d %d", &k,&v);//k=Position,V=Number
+    for(i=n-1;i>=k-1;i--){//loop starts from last index and ends k's index
        a[i+1] = a[i];
     }
     a[k-1] = v;
