@@ -1,4 +1,4 @@
-# 1. Write a C program to find the sum of all elements of an array.
+### 1. Write a C program to find the sum of all elements of an array.
 
 ```c
 #include<stdio.h>
