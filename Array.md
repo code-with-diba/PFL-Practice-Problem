@@ -322,61 +322,25 @@ int main(){
 ### 1.Write a C program to add two matrices.
 ```c
 #include<stdio.h>
-
 int main(){
 
     int i,j,r,c,a[100][100],b[100][100];
     scanf("%d %d",&r,&c);
-    // loop for input array a
     for(i=0; i<r; i++)
         for(j=0; j<c; j++)
             scanf("%d",&a[i][j]);
-    // loop for input array b
     for(i=0; i<r; i++)
         for(j=0; j<c; j++)
             scanf("%d",&b[i][j]);
-    // adding 2 matrix in to a
     for(i=0; i<r; i++){
         for(j=0; j<c; j++){
             a[i][j] += b[i][j];
-        }
-    }
-    // printing array a (updated after adding 2 matrix)
-    for(i=0; i<r; i++){
-        for(j=0; j<c; j++){
             printf("%d ",a[i][j]);
         }
-        printf("\n");
+       printf("\n");
     }
-
 }
-```
-OR
-```c
-#include<stdio.h>
 
-int main(){
-
-    int i,j,r,c,a[100][100],b[100][100];
-    scanf("%d %d",&r,&c);
-    // loop for input array a
-    for(i=0; i<r; i++)
-        for(j=0; j<c; j++)
-            scanf("%d",&a[i][j]);
-    // loop for input array b
-    for(i=0; i<r; i++)
-        for(j=0; j<c; j++)
-            scanf("%d",&b[i][j]);
-    // adding 2 matrix in to a
-    for(i=0; i<r; i++){
-        for(j=0; j<c; j++){
-            a[i][j] += b[i][j];
-            printf("%d ",a[i][j]); // printing array a (updated after adding 2 matrix)
-        }
-        printf("\n");
-    }
-
-}
 ```
 
 ### 2.Write a C program to check whether two matrices are equal.
