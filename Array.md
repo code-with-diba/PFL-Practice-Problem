@@ -268,7 +268,7 @@ int main(){
 ```
 
 ### 11.Write a C program to sort the elements of an array in ascending or descending order.
-Ascending
+### Ascending
 ```c
 // index pick -->>  (i)
 // checking -->> (j)
