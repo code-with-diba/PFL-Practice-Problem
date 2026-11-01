@@ -323,7 +323,6 @@ int main(){
 ```c
 #include<stdio.h>
 int main(){
-
     int i,j,r,c,a[100][100],b[100][100];
     scanf("%d %d",&r,&c);
     for(i=0; i<r; i++)
