@@ -345,32 +345,30 @@ int main(){
 ### 2.Write a C program to check whether two matrices are equal.
 ```c
 #include<stdio.h>
-
 int main(){
-
     int i,j,r,c,a[100][100],b[100][100],f=1;
     scanf("%d %d",&r,&c);
-    for(i=0; i<r; i++){}
-        for(j=0; j<c; j++){
+    for(i=0; i<r; i++){
+        for(j=0; j<c; j++)
             scanf("%d",&a[i][j]);
-        } 
-    for(i=0; i<r; i++){}
-        for(j=0; j<c; j++){
+        }
+    for(i=0; i<r; i++){
+        for(j=0; j<c; j++)
             scanf("%d",&b[i][j]);
         }
     for(i=0; i<r; i++){
-        for(j=0; j<c; j++){
+        for(j=0; j<c; j++)
             if(a[i][j]!=b[i][j]){
                 f=0;
                 break;
             }
-        }
-        if(f==0) break; //optional
     }
-    if(f==1) printf("Equal");
-    else printf("Not Equal");
-
+    if(f==1)
+        printf("Equal");
+    else
+       printf("Not Equal");
 }
+
 ```
 
 ### 3.Write a C program to perform Scalar matrix multiplication.
