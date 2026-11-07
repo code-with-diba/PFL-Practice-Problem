@@ -456,33 +456,26 @@ int main(){
 ### 7.Write a C program to check whether a matrix is an identity matrix.
 ```c
 #include<stdio.h>
-
 int main(){
-
     int i,j,n,a[100][100],c1=0,c0=0;
-
     scanf("%d",&n);
-    // input for array a
     for(i=0; i<n; i++){
         for(j=0; j<n; j++){
             scanf("%d",&a[i][j]);
         }
     }
-    // checking wheather its a Identity Matrix or not. 
     for(i=0; i<n; i++){
         for(j=0; j<n; j++){
-            if(i == j && a[i][j] == 1){ // i == j && a[i][j] == 1 c1 = should be n like if n = 5 c1 should be 5
+            if(i == j && a[i][j] == 1)
                 c1++;
-            }
-            else if(i != j && a[i][j] == 0){ // i != j && a[i][j] == 0 c0 = should be n*n-n like if n = 5 c0 should be 5*5-5 = 20 
-                c0++;                        // coz in a square matrix there is total n*n element and since we have 1 on the diagonal axis 
-            }                                // thats why we -n after the multiplication 
+            else if(i != j && a[i][j] == 0)
+                c0++;
         }
     }
-
-    if(c1==n && c0==n*n-n) printf("Identity");
-    else printf("Not Identity");
-
+            if(c1==n && c0==n*n-n)
+                printf("Identity");
+            else 
+                printf("Not Identity");
 }
 ```
 
