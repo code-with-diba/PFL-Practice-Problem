@@ -412,19 +412,16 @@ int main(){
 ### 5.Write a C program to find the sum of the minor diagonal elements of a matrix.
 ```c
 #include<stdio.h>
-
 int main(){
-
     int i,j,n,a[100][100],sum=0;
     scanf("%d",&n);
-    // loop for input array a
     for(i=0; i<n; i++){        
         for(j=0; j<n; j++){
             scanf("%d",&a[i][j]);
         }
     }
     for(i=0; i<n; i++){
-            sum+= a[i][n-1-i]; // a [i][i] -->> for LT (Major)
+            sum+= a[i][n-1-i]; 
     }
     printf("%d",sum);
 }
