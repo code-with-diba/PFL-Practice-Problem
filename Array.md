@@ -374,19 +374,10 @@ int main(){
 ### 3.Write a C program to perform Scalar matrix multiplication.
 ```c
 #include <stdio.h>
-
 int main() {
-    int n, scalar;
-    int i, j;
-
-    printf("Enter the order of the matrix: ");
+    int n, scalar,i, j;
     scanf("%d", &n);
-
-    printf("Enter the scalar value: ");
     scanf("%d", &scalar);
-
-    printf("Scalar Matrix:\n");
-
     for (i = 0; i < n; i++) {
         for (j = 0; j < n; j++) {
             if (i == j)
@@ -396,8 +387,6 @@ int main() {
         }
         printf("\n");
     }
-
-    return 0;
 }
 ```
 
