@@ -430,11 +430,8 @@ int main(){
 ### 6.Write a C program to find the transpose of a matrix. 
 ```c
 #include<stdio.h>
-
 int main(){
-
     int i,j,r,c,a[100][100],tr[100][100];
-
     scanf("%d %d",&r,&c);
     for(i=0; i<r; i++){
         for(j=0; j<c; j++){
@@ -447,13 +444,12 @@ int main(){
             tr[j][i]=a[i][j];
         }
     }
-    for(i=0; i<c; i++){
-        for(j=0; j<r; j++){
+    for(i=0; i<c; i++){//i<c(r=c)
+        for(j=0; j<r; j++){//j<r(c=r)
             printf("%d ",tr[i][j]);
         }
         printf("\n");
     }
-
 }
 ```
 
