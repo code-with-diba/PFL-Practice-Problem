@@ -482,33 +482,24 @@ int main(){
 ### 8.Write a C program to check whether a matrix is sparse.
 ```c
 #include<stdio.h>
-
 int main(){
-
     int i,j,r,c,a[100][100],count=0;
-
     scanf("%d %d",&r,&c);
-    // array input
     for(i=0; i<r; i++){
         for(j=0; j<c; j++){
             scanf("%d",&a[i][j]);
         }
     }
-    // checking if the eliment is 0 or not. if == 0 count else dont.
     for(i=0; i<r; i++){
         for(j=0; j<c; j++){
             if(a[i][j]==0)
                 count++;
         }
     }
-            
-    if(count > (r*c)/2){
-        printf("Sparse Matrix");
-    }
-    else{
-        printf("Not a Sparse Matrix");
-    }
-
+            if(count > (r*c)/2)
+                printf("Sparse Matrix");
+            else
+                printf("Not a Sparse Matrix");
 }
 ```
 
