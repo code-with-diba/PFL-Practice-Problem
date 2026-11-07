@@ -393,22 +393,20 @@ int main() {
 ### 4.Write a C program to find the sum of a matrix's main/major diagonal elements.
 ```c
 #include<stdio.h>
-
 int main(){
-
-    int i,j,n,a[100][100],sum=0;
+     int i,j,n,a[100][100],sum=0;
     scanf("%d",&n);
-    // loop for input array a
-    for(i=0; i<n; i++){        
+    for(i=0; i<n; i++){
         for(j=0; j<n; j++){
             scanf("%d",&a[i][j]);
         }
     }
     for(i=0; i<n; i++){
-            sum+= a [i][i]; //  -->> for a[i][n-1-i] RT (Minor)
+            sum+= a [i][i]; //  -->> for (Minor)=> a[i][n-1-i]
     }
     printf("%d",sum);
 }
+
 ```
 
 ### 5.Write a C program to find the sum of the minor diagonal elements of a matrix.
