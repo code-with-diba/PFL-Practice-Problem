@@ -402,7 +402,7 @@ int main(){
         }
     }
     for(i=0; i<n; i++){
-            sum+= a [i][i]; //  -->> for (Minor)=> a[i][n-1-i]
+            sum+= a [i][i]; 
     }
     printf("%d",sum);
 }
