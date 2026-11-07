@@ -207,16 +207,22 @@ int main() {
 #include <stdio.h>
 int main() {
     char str[100];
-    scanf("%[^\n]", str);
-    int length = 0;
-    while (str[length] != '\0')
-        length++;
+    int l = 0,i;
+    scanf("%s", str);
+    while (str[l] != '\0')
+        l++;
     int isPalindrome = 1;
-    for (int i = 0; i < length / 2; i++) {
-        if (str[i] != str[length - 1 - i]) { isPalindrome = 0; break; }
+    for (i = 0; i < l / 2; i++) {
+        if (str[i] != str[l - 1 - i]) {
+                isPalindrome = 0;
+                 break;
+         }
     }
-    printf("%s\n", isPalindrome ? "Palindrome" : "Not Palindrome");
-    return 0;
+    if(isPalindrome == 1)
+        printf("Palindrome");
+    else
+        printf("Not Palindrome");
 }
+
 ```
 
