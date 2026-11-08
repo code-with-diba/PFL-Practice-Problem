@@ -4,12 +4,12 @@
 int cube(int x) {
     int y;
     y = x * x * x;
-    return y;
+    return y;// Returning y to main function
 }
 int main() {
     int a, b;
     scanf("%d", &a);
-    b = cube(a);
+    b = cube(a);// Calling cube function and sending the value of 'a'
     printf("%d", b);
 }
 
