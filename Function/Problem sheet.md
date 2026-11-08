@@ -98,8 +98,7 @@ int main() {
 ### 6.Write a C program using functions to find the factorial of an integer.
 ```c
 #include<stdio.h>
-
-int Factorial (int x)
+int factorial (int x)
 {
     int i, fact=1;
     for(i=1; i<=x; i++) {
@@ -107,14 +106,11 @@ int Factorial (int x)
     }
     return fact;
 }
-
-int main()
-{
+int main() {
     int n, result;
     scanf("%d", &n);
-    result = Factorial(n);
+    result = factorial(n);
     printf("%d", result);
-   
 }
 ```
 
