@@ -117,13 +117,10 @@ int main() {
 ### 7.Write a C program to find all prime numbers between the given intervals using functions. 
 ```c
 #include<stdio.h>
-
-int isprime(int x)
+int Isprime(int x)
 {
     int i, f=1;
-    if(x<2) // 1 is not prime
-        f=0;
-    for(i=2; i<x; i++){
+    for(i=2; i<x; i++){//Notice i=2,i<x
         if(x%i==0){
             f=0;
             break;
@@ -131,15 +128,12 @@ int isprime(int x)
     }
     return f;
 }
-
-int main()
-{
+int main() {
     int a, b, i;
     scanf("%d %d", &a, &b);
     for(i=a; i<=b; i++){
-        if(isprime(i)==1){
+        if(Isprime(i)==1)
             printf("%d ", i);
-        }
     }
 }
 ```
