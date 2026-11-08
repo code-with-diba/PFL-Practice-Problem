@@ -54,7 +54,6 @@ int main()
 ### 4.Write a C program using functions to check whether a number is even or odd. 
 ```c
 #include <stdio.h>
-
 int OE(int x)
 {
     if (x % 2 == 0)
@@ -62,7 +61,6 @@ int OE(int x)
     else
         return 1;
 }
-
 int main()
 {
     int a, b;
