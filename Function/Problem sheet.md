@@ -35,7 +35,6 @@ int main() {
 ### 3.Write a C program to find the minimum between two numbers using functions.
 ```c
 #include <stdio.h>
-
 int Min(int x, int y)
 {
     if (x < y)
@@ -43,7 +42,6 @@ int Min(int x, int y)
     else
         return y;
 }
-
 int main() 
 {
     int a, b, m;
