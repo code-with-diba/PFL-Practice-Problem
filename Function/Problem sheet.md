@@ -18,17 +18,15 @@ int main() {
 ### 2.Write a C program using functions to find the area of a circle where the radius is given.
 ```c
 #include <stdio.h>
-
 double AreaC(double r)
 {
     double a;
     a = 3.1416 * r * r;
     return a;
 }
-
 int main() {
     double a, b;
-    scanf("%lf", &a);
+    scanf("%lf", &a);// storing radius in a
     b = AreaC(a);
     printf("%.2lf", b);
 }
