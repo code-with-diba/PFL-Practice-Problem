@@ -42,8 +42,7 @@ int Min(int x, int y)
     else
         return y;
 }
-int main() 
-{
+int main()  {
     int a, b, m;
     scanf("%d %d", &a, &b);
     m = Min(a, b);
@@ -61,8 +60,7 @@ int OE(int x)
     else
         return 1;
 }
-int main()
-{
+int main() {
     int a, b;
     scanf("%d", &a);
     b = OE(a);
@@ -76,7 +74,6 @@ int main()
 ### 5.Write a C program using functions to check whether a number is prime or not.
 ```c
 #include <stdio.h>
-
 int Isprime(int x)
 {
     int i, f = 1;
@@ -88,18 +85,13 @@ int Isprime(int x)
     }
     return f;
 }
-
-int main()
-{
+int main() {
     int n;
     scanf("%d", &n);
-    if (Isprime(n) == 1) {
+    if (Isprime(n) == 1) 
         printf("Prime");
-    }
-    else {
+    else 
         printf("Not prime");
-    }
-    return 0;
 }
 ```
 
