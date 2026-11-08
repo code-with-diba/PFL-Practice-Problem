@@ -1,7 +1,7 @@
 ### 1. Write a C program to find the cube of any number using a function.
 ```c
 #include <stdio.h>
-int cube(int x) {
+int cube(int x) {//There is no semicolon(;) after function
     int y;
     y = x * x * x;
     return y;// Returning y to main function
