@@ -285,7 +285,7 @@ int main() {
     while(num!=0)
     {
         num=num/10;
-        ++count;
+        count++;
     }
       printf("Number of digits = %d",count);
 }
