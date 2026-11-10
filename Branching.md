@@ -305,13 +305,14 @@ int main() {
 int main() {
     int amount;
     scanf("%d", &amount);
-    int notes[] = {500, 100, 50, 20, 10, 5, 2, 1};
-    int n = 8;
-    for (int i = 0; i < n; i++) {
-        int count = amount / notes[i];
+    int notes[8] = {500, 100, 50, 20, 10, 5, 2, 1},i,count;
+
+    for ( i = 0; i < 8; i++) {
+        count = amount / notes[i];
         amount = amount % notes[i];
         if (count > 0)
             printf("Notes of %d = %d\n", notes[i], count);
     }
 }
+
 ```
