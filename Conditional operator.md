@@ -39,11 +39,12 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int year, isLeap;
-    scanf("%d", &year);
-    isLeap = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
+    int y, isLeap;
+    scanf("%d", &y);
+    isLeap = ((y % 4 == 0 && y % 100 != 0) || (y % 400 == 0));
     printf("%s", isLeap ? "Leap year" : "Not leap year");
 }
+
 
 ```
 
