@@ -261,7 +261,7 @@ int main() {
 ```
 
 ### Holo Pyramid
-
+```c
 Input - Enter N = 5
 Output -
     *
@@ -269,7 +269,7 @@ Output -
   *   *
  *     *
 *********
-
+```
 ```c
 #include <stdio.h>
 int main() {
