@@ -105,21 +105,19 @@ int main() {
 
 ```c
 #include <stdio.h>
-
 int main() {
     char ch;
     scanf("%c", &ch);
-
     if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')){
-
-        if (ch >= 'A' && ch <= 'Z')
+    if(ch >= 'A' && ch <= 'Z')
             printf("Uppercase");
          else
             printf("Lowercase");
     }
         else
-        printf("%c is not a valid alphabet letter.\n", ch);
+        printf("Not a valid alphabet");
 }
+
 ```
 
 ### 8. Write a C program to input any alphabet and check whether it is a vowel.
