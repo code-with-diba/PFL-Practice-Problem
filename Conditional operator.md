@@ -30,7 +30,7 @@ int main() {
 int main() {
     int n;
     scanf("%d", &n);
-    printf("%s", (n % 2 == 0) ? "Even" : "Odd");
+    printf("%s", (n % 2 == 0) ? "Even" : "Odd"); //Need to add '' ''
 }
 ```
 
@@ -39,11 +39,12 @@ int main() {
 ```c
 #include <stdio.h>
 int main() {
-    int year;
+    int year, isLeap;
     scanf("%d", &year);
-    int isLeap = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
+    isLeap = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0));
     printf("%s", isLeap ? "Leap year" : "Not leap year");
 }
+
 ```
 
 ## 5. Alphabet check using conditional operator
