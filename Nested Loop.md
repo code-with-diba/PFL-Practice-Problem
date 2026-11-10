@@ -76,15 +76,16 @@ input = n=5
 ```c
 #include <stdio.h>
 int main() {
-    int n;
+    int n,i,j;
     scanf("%d", &n);
-    for (int i = 0; i < n; i++) {
-        long long value = 1;
-        for (int j = 0; j <= i; j++) {
-            printf("%lld ", value);
+    for ( i = 0; i < n; i++) {
+        int value = 1;
+        for ( j = 0; j <= i; j++) {
+            printf("%d ", value);
             value = value * (i - j) / (j + 1);
         }
         printf("\n");
     }
 }
+
 ```
