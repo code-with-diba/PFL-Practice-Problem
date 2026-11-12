@@ -86,110 +86,8 @@ int main() {
     }
 }
 ```
-### 2. Pyramid Pattern
-```c
-Input - Enter n: 5
-Output --
-    *
-   * *
-  * * *
- * * * *
-* * * * *
-```
-```c
-#include<stdio.h>
-int main()
-{
-    int n,nst=1,i,j,k;
-    scanf("%d",&n);
-
-    for(i=1;i<=n;i++){
-        for(j=1;j<=n-i;j++){
-            printf(" ");
-        }
-        for(k=1;k<=nst;k++){
-            printf("*");
-        }
-
-        nst=nst+2;
-        printf("\n");
-    }
-}
-```
-
-### 3. Inverted Pyramid
-```c
-Enter n: 5
-* * * * *
- * * * *
-  * * *
-   * *
-    *
-```
-```c
-#include <stdio.h>
-int main() {
-    int n,i,j,k,nst;
-    scanf("%d", &n);
-    nst = n;
-    for (i = 1; i <= n; i++) {
-        for (j = 1; j <= i - 1; j++) {
-            printf(" ");
-        }
-        for (k= 1; k <= nst; k++) {
-            printf("* ");
-        }
-        nst--;
-        printf("\n");
-    }
-}
-```
 
 
-
-### 5.Pattern number
-```c
-Input - Enter N = 4
-Output -
-1
-1 2
-1 2 3
-1 2 3 4
-```
-```c
-#include <stdio.h>
-int main() {
-    int n,i,j;
-    scanf("%d", &n);
-    for (i = 1; i <= n; i++) {
-        for (j = 1; j <= i; j++) {
-            printf("%d ",j);
-        }
-        printf("\n");
-    }
-}
-
-```
-### 6.pattern number
-```c
-1
-2 2
-3 3 3
-4 4 4 4
-```
-```c
-#include <stdio.h>
-int main() {
-    int n,i,j;
-    scanf("%d", &n);
-    for (i = 1; i <= n; i++) {
-        for (j = 1; j <= i; j++) {
-            printf("%d ",i);
-        }
-        printf("\n");
-    }
-}
-```
 
 ### 7.Pattern Alphabet
 ```c
@@ -312,5 +210,47 @@ int main() {
     }
 }
 ```
+### 5.Pattern number
+```c
+Input - Enter N = 4
+Output -
+1
+1 2
+1 2 3
+1 2 3 4
+```
+```c
+#include <stdio.h>
+int main() {
+    int n,i,j;
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("%d ",j);
+        }
+        printf("\n");
+    }
+}
 
+```
+### 6.pattern number
+```c
+1
+2 2
+3 3 3
+4 4 4 4
+```
+```c
+#include <stdio.h>
+int main() {
+    int n,i,j;
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("%d ",i);
+        }
+        printf("\n");
+    }
+}
+```
 
