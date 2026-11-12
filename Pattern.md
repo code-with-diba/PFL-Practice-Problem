@@ -236,27 +236,27 @@ Enter N = 5
 ```c
 #include <stdio.h>
 int main() {
-    int n,i,j,k;
-    scanf("%d",&n);
-    for(i = 1;i < n; i++){
-        for(j = 1; j <=n-i;j ++){
+    int n, i, j, k, nst = 1;
+    scanf("%d", &n);
+      for (i = 1; i <= n; i++) {
+        for (j = 1; j <= n - i; j++) 
             printf(" ");
-        }
-        for(k = 1;k  <= i;k ++){
-            printf("* ");
-        }
+        for (k = 1; k <= nst; k++) 
+            printf("*");
+        nst = nst + 2;
         printf("\n");
     }
-    for(i = n;i >=1;i --){
-        for(j = 1;j  <=n-i;j ++){
+    nst = 2 * n - 3;
+    for (i = 1; i <= n - 1; i++) {
+        for (j = 1; j <= i; j++) 
             printf(" ");
-        }
-        for(k = 1; k <=i;k ++){
-            printf("* ");
-        }
+        for (k = 1; k <= nst; k++) 
+            printf("*");
+        nst = nst - 2;
         printf("\n");
     }
 }
+
 
 ```
 
