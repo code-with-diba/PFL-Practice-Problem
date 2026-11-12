@@ -43,8 +43,8 @@ int main() {
 }
 
 ```
-```c
 ### 3.
+```c
 input = n=4
    *
   **
@@ -67,8 +67,8 @@ int main() {
     }
 }
 ```
-```c
 ### 4.
+```c
 n = 4
 ****
 ***
@@ -88,6 +88,7 @@ int main() {
     }
 }
 ```
+### 5.
 ```c
 Enter n = 4
    *
@@ -107,6 +108,7 @@ for (i = 1; i <= n; i++) {
     printf("\n");
 }
 ```
+### 6.
 ```c
 Enter n = 4
 *
@@ -135,7 +137,7 @@ int main() {
     }
 }
 ```
-### 8.Diamond Shape Pattern
+### 7.Diamond Shape Pattern
 ```c
 Enter N = 5
     *
@@ -175,7 +177,7 @@ int main() {
 
 ```
 
-### 9.Holo Diamond
+### 8.Holo Diamond
 ```c
 Enter N = 5
 *
@@ -200,7 +202,7 @@ int main() {
     }
 }
 ```
-### 5.Pattern number
+### 9.Pattern number
 ```c
 Input - Enter N = 4
 Output -
@@ -223,7 +225,7 @@ int main() {
 }
 
 ```
-### 6.pattern number
+### 10.
 ```c
 1
 2 2
@@ -243,6 +245,7 @@ int main() {
     }
 }
 ```
+### 11.
 ```c
 input n = 4
 4
@@ -263,7 +266,7 @@ int main() {
     }
 }
 ```
-
+### 12.
 ```c
 input n = 4
 4
