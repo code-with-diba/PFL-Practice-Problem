@@ -1,4 +1,26 @@
-### 1. Star pattern (triangle)
+### 1. Star pattern (Rectangle)
+```c
+input = n=4
+* * * *
+* * * *
+* * * *
+* * * *
+```
+```c
+#include <stdio.h>
+int main() {
+    int n,i,j;
+    scanf("%d", &n);
+    for (i = 1; i <=n; i++) {
+        for (j = 1; j <= n; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+}
+```
+
+### 2. Star pattern (triangle)
 ```c
 input = n=5
 *
