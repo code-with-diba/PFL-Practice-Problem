@@ -89,34 +89,7 @@ int main() {
 
 
 
-### 7.Pattern Alphabet
-```c
-Input - Enter N = 4
-Output -
-A
-AB
-ABC
-ABCD
-````
-```c
-#include<stdio.h>
-int main()
-{
-    int n,a,d,i,j;
-    scanf("%d",&n);
 
-    for(i=1;i<=n;i++){
-        a=1;
-        for(j=1;j<=i;j++){
-           d=a+64;
-           char ch = (char)d;
-           printf("%c ",ch);
-           a++;
-        }
-        printf("\n");
-          }
-}
-```
 ```c
 Enter n = 4
 *
@@ -268,6 +241,27 @@ int main() {
     for (i = 1; i <= n; i++) {
         for (j = 1; j <= i; j++) {
             printf("%d ", n - i + 1);
+        }
+        printf("\n");
+    }
+}
+```
+
+```c
+input n = 4
+4
+4 3
+4 3 2
+4 3 2 1
+```
+```c
+#include <stdio.h>
+int main() {
+    int n, i, j;
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("%d ", n - j + 1);
         }
         printf("\n");
     }
