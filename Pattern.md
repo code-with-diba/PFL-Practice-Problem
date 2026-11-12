@@ -1,4 +1,4 @@
-### 1. 
+### 1.Star pattern (Rectangle)
 ```c
 input = n=4
 * * * *
