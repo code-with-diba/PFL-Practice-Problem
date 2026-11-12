@@ -93,6 +93,7 @@ Enter n = 4
  *****
 *******
 ```
+```c
 for (i = 1; i <= n; i++) {
     for (j = 1; j <= n - i; j++) {
         printf(" ");
@@ -103,6 +104,7 @@ for (i = 1; i <= n; i++) {
     nst = nst + 2;
     printf("\n");
 }
+```
 ```c
 Enter n = 4
 *
