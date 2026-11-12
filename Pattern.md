@@ -271,52 +271,19 @@ Enter N = 5
 ```
 ```c
 #include <stdio.h>
-
 int main() {
-    int r,c,n;
-    printf("Enter N = ");
-    scanf("%d",&n);
-    for(r = 1;r <=n; r++){
-        for(c = 1;c <=r; c++){
-            if(c==1 || r==n || c==r){
-                printf("*");
-            }
-            else{
-                printf(" ");
-            }
-        }
-        printf("\n");
-    }
-
-    return 0;
-}
-```
-
-### Holo Pyramid
-```c
-Input - Enter N = 5
-Output -
-    *
-   * *
-  *   *
- *     *
-*********
-```
-```c
-#include <stdio.h>
-int main() {
-    int n,i,j;
-    scanf("%d",&n);
-    for(i = 1;i <=n;i ++){
-        for(j = 1;j <=i;j ++){
-            if(j==1 || i==n || j==i)
+    int i, j, n;
+    scanf("%d", &n);
+    for(i = 1; i <= n; i++){
+        for(j = 1; j <= i; j++){
+            if(j == 1 || i == n || j == i)
                 printf("*");
             else
                 printf(" ");
-
         }
         printf("\n");
     }
 }
-
 ```
+
+
