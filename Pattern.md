@@ -219,7 +219,34 @@ int main()
           }
 }
 ```
-
+```c
+Enter n = 4
+*
+* *
+* * *
+* * * *
+* * *
+* *
+*
+```
+```c
+#include <stdio.h>
+int main() {
+    int n, i, j;
+    scanf("%d", &n);
+    for (i = 1; i <= n; i++) {
+        for (j = 1; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    for (i = 2; i <= n; i++) {
+        for (j = i; j <= n; j++)
+            printf("* ");
+        printf("\n");
+    }
+}
+```
 ### 8.Diamond Shape Pattern
 ```c
 Enter N = 5
